@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework_class_05</title>
+  </head>
+  <body>
+    <header>
+      <h1>Homework_class_05</h1>
+    </header>
+
+    <main>
+        <form action="https://my_server.com" method="post">
+          <table border="1" cellpadding="20" cellspacing="0">
+            <caption>
+              STUDENT EXERCISE
+            </caption>
+            <thead>
+              <tr>
+                <th align="left" bgcolor="lightgrey">Testform</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <label for="name">Name</label>
+                  <input type="text" placeholder="Name" id="name" />
+                  <br />
+
+                  <label for="pwdInput">Password</label>
+                  <input type="password" placeholder="Password" id="pwdInput" />
+                  <br />
+
+                  <p>Gender</p>
+
+                  <input type="radio" id="male" />
+                  <label for="male"> Male </label>
+
+                  <br />
+
+                  <input type="radio" id="female" />
+                  <label for="female"> Female </label>
+
+                  <br />
+                  <br />
+
+                  <label for="continent">Continent</label>
+                  <select id="continent">
+                    <option disabled selected>Please select one option</option>
+                    <option>Europe</option>
+                    <option>Asia</option>
+                    <option>Africa</option>
+                    <option>Australia</option>
+                  </select>
+
+                  <p>Meals</p>
+
+                  <input type="checkbox" id="breakfast" value="breakfast" />
+                  <label for="breakfast">breakfast</label>
+
+                  <br />
+
+                  <input type="checkbox" id="lunch" value="lunch" />
+                  <label for="lunch">lunch</label>
+
+                  <br />
+
+                  <input type="checkbox" id="dinner" value="dinner" />
+                  <label for="dinner">dinner</label>
+
+                  <br />
+                  <br />
+
+                  <label for="comment">Remark</label>
+                  <br />
+
+                  <textarea
+                    minlength="10"
+                    maxlength="400"
+                    placeholder=""
+                    id="comment"
+                    cols="80"
+                    rows="10"
+                  ></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td align="right" bgcolor="lightgrey">
+                  <input type="submit" value="Send" />
+                  <button type="reset">Cancel</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+    </main>
+
+    <article></article>
+  </body>
+</html>
