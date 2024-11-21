@@ -1,0 +1,55 @@
+h1 {
+    text-align: center;
+    border: solid black 1px;
+    border-radius: 5px;
+    width: 80%;
+    margin-left: 100px;
+    color: brown;
+}
+
+#vision_id {
+    display: inline-block;
+    width: 100%;
+    height: 10%;
+}
+
+
+.text_width {
+    width: 60px;
+    height: 60px;
+}
+
+img {
+    display:inline-block;
+    margin-left: 100px;
+    
+}
+
+#visionWrapper {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+
+#missionWrapper {
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    overflow: scroll;
+    background-color: aquamarine;
+    
+}
+
+.mission  {
+    display: inline-block;
+    width: 40%;
+    height: 100%;
+    
+}
+
+#mission_id {
+    box-sizing: border-box;
+}
