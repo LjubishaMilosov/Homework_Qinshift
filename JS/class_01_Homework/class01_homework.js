@@ -9,7 +9,7 @@ let totalPrice = phonePrice * totalNumOfPhones;
 console.log(totalPrice);
 let totalTax = (totalPrice * tax / 100);
 console.log(totalTax);
-totalPriceWithTax = totalPrice + totalTax;
+let totalPriceWithTax = totalPrice + totalTax;
 console.log(`The total price for 30 phones incling tax is ${totalPriceWithTax}`);
 
 
