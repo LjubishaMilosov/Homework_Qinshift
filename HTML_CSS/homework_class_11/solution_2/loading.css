@@ -1,0 +1,93 @@
+/* body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ff0000; 
+  color: #fff;
+}
+
+.loading-container {
+  text-align: center;
+  width: 200px; 
+}
+
+p {
+  margin: 20px 0;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+
+.loading-line {
+  height: 4px;
+  background-color: #fff; 
+  margin: 5px auto;
+  animation: loadLine 1.5s ease-in-out infinite;
+}
+
+
+.loading-line:nth-child(1) {
+  animation-delay: 0s;
+}
+
+
+.loading-line:nth-child(3) {
+  animation-delay: 0.5s; 
+}
+
+
+@keyframes loadLine {
+  0%, 100% {
+    width: 0; 
+  }
+  50% {
+    width: 100%; 
+  }
+} */
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ff0000; /* Red background */
+  color: #fff; /* White text */
+}
+
+.loading-container {
+  text-align: center;
+  width: 300px; /* Container width */
+}
+
+p {
+  margin: 20px 0;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* Loading line styles */
+.loading-line {
+  height: 4px;
+  background-color: #fff; /* White lines */
+  margin: 5px auto;
+  animation: loadLine 1.5s ease-out infinite;
+ 
+}
+
+/* Keyframes for loading animation */
+@keyframes loadLine {
+  0%, 100% {
+    width: 0; /* Start and end with no width */
+  }
+  0% {
+    width: 100%; /* Fully expand from left to right */
+  }
+}
