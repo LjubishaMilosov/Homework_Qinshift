@@ -9,26 +9,29 @@
 // Call the function three times with different sets of values.
 // Bonus: Figure out how to get the current year in JavaScript instead of passing it in.
 
-function calculateAge(birthYear, currentYear) {
-  let myAge = currentYear - birthYear;
+function calculateAge(birth_year) {
+  let currentYear = getCurrentYear();
+  let myAge = currentYear - birth_year;
   return myAge;
 }
 
-console.log(calculateAge(1983, 2024));
-console.log(calculateAge(2000, 2024));
-console.log(calculateAge(2004, 2024));
-
-//BONUS:
-function getCurrentDate() {
+function getCurrentYear() {
   let currentDate = new Date();
   let currentYear = currentDate.getFullYear();
-  let currentMonth = currentDate.getMonth() + 1; // In JavaScript, months are indexed starting from 0 -> Add 1 to get the correct month
-  let currentDay = currentDate.getDate();
-  let fullCurrentDate = `Full current date is ${currentYear}/${currentMonth}/${currentDay}`;
-  return fullCurrentDate;
+  return currentYear;
 }
 
-console.log(getCurrentDate());
+console.log(calculateAge(1983));
+// function getCurrentDate() {
+//   let currentDate = new Date();
+//   let currentYear = currentDate.getFullYear();
+//   let currentMonth = currentDate.getMonth() + 1; // In JavaScript, months are indexed starting from 0 -> Add 1 to get the correct month
+//   let currentDay = currentDate.getDate();
+//   let fullCurrentDate = `Full current date is ${currentYear}/${currentMonth}/${currentDay}`;
+//   return fullCurrentDate;
+// }
+
+// console.log(getCurrentDate());
 
 
 

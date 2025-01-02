@@ -1,13 +1,18 @@
-let userPromptInput = prompt("Enter a year to find its Chinese Zodiac:");
+let userPromptInput;
+let year;
 
-let year = parseInt(userPromptInput);
+while (true) {
+  userPromptInput = prompt("Enter a year to find its Chinese Zodiac:");
+  year = parseInt(userPromptInput);
 
-if (isNaN(year)) {
-  alert("Please enter a valid positive year.");
-} else if (year < 4) {
-  alert("This calculator can only calculate the Chinese Zodiac sign for years after 4 AD. Please try again.");
-} else {
-
+  if (isNaN(year)) {
+    alert("Please enter a valid positive year.");
+  } else if (year < 4) {
+    alert("This calculator can only calculate the Chinese Zodiac sign for years after 4 AD. Please try again.");
+  } else {
+    break;
+  }
+}
   const zodiacCalculatedIndex = (year - 4) % 12;
 
   let chineseZodiacSign;
@@ -39,4 +44,4 @@ if (isNaN(year)) {
   }
 
   alert(`The Chinese Zodiac sign for the year ${year} is ${chineseZodiacSign}`);
-}
+
