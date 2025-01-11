@@ -22,6 +22,9 @@ function getCurrentYear() {
 }
 
 console.log(calculateAge(1983));
+
+
+
 // function getCurrentDate() {
 //   let currentDate = new Date();
 //   let currentYear = currentDate.getFullYear();

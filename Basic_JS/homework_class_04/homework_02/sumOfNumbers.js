@@ -22,13 +22,13 @@ function sumOfNumbers(numArray) {
   return sum;
 }
 
-let numArray = [56, 12, 4, 7, 44, "4"];
+let numArray = [56, 12, 4, 7, 44, ];
 let result = sumOfNumbers(numArray);
 
 if (typeof result === "string") {
   console.log(result);
   alert(result);
-} else {
+ } else {
   console.log(`The sum is: ${result}`);
-  alert(`The sum is: ${result}`);
-}
+   alert(`The sum is: ${result}`);
+ }
