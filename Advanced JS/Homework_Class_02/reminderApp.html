@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reminder App</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Reminder App</h1>
+      <div id="reminderForm">
+        <label for="titleInput">Title:</label>
+        <input type="text" id="titleInput" placeholder="Enter Title" />
+
+        <label for="prioritySelect">Priority</label>
+        <select id="prioritySelect">
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+
+        <label for="color">Color:</label>
+        <input type="color" id="color" />
+
+        <label for="descriptionInput">Description:</label>
+        <textarea
+          id="descriptionInput"
+          placeholder="Enter Description"
+        ></textarea>
+
+        <button id="submitBtn" type="submit">Add Reminder</button>
+    </div>
+
+      <button id="showRemindersButton">Show All Reminders</button>
+
+      <div id="reminderTableContainer" style="display: none">
+        <table id="reminderTable">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Priority</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Reminders to be added here in a 
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="reminderApp.js"></script>
+  </body>
+</html>
